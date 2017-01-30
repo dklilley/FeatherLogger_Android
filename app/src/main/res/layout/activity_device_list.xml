@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="org.lilleypad.featherloggerapp.DeviceListActivity_b">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Discovered Devices:"
+        android:id="@+id/discoveredDevicesLabel"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Scan for Devices"
+        android:id="@+id/refreshDevicesBtn"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:onClick="onClickScan" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select a device to connect to it."
+        android:id="@+id/discoveredDevicesDirections"
+        android:layout_below="@+id/discoveredDevicesLabel"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/scan_no_devices_found"
+        android:id="@+id/noDevicesTextView"
+        android:layout_alignBottom="@+id/discoveredDevicesLabel"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/discoveredDevicesListView"
+        android:choiceMode="singleChoice"
+        android:layout_below="@+id/discoveredDevicesDirections"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>

@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">FeatherLogger App</string>
+    <string name="dialog_error_no_ble">Bluetooth LE is not available</string>
+    <string name="dialog_error_no_bluetooth">Bluetooth is not available</string>
+    <string name="dialog_error_nolocationservices_requiredforscan_marshmallow">Location services must be turned on to scan for Bluetooth devices in Anrdoid Marshmallow and later</string>
+    <string name="scan_unexpecteddisconnect">Bluetooth device was unexpectedly disconnected</string>
+
+    <string name="request_location_dialog_body">Location services are required for Bluetooth to discover devices.</string>
+    <string name="request_location_dialog_title">Request Location Permissions</string>
+    <string name="denied_location_dialog_body">Since location access has not been granted, the app will not be able to scan for Bluetooth devices.</string>
+    <string name="denied_location_dialog_title">Bluetooth Scanning Not Available</string>
+
+    <string name="request_storage_dialog_body">Storage permissions are required for files to be downloaded form the FeatherLogger.</string>
+    <string name="request_storage_dialog_title">Request Storage Permissions</string>
+    <string name="denied_storage_dialog_body">Since storage permission has not been granted, the app will be unable to download files from the FeatherLogger.</string>
+    <string name="denied_storage_dialog_title">Downloading Files Not Available</string>
+
+    <string name="mqtt_connection_failed">MQTT connection has failed…</string>
+    <string name="mqtt_connection_lost">MQTT connection was lost…</string>
+
+    <!-- UI -->
+    <string name="scan_scanbutton_scan">Scan for Devices</string>
+    <string name="scan_scanbutton_scanning">Scanning…</string>
+    <string name="scan_no_devices_found">No Devices Found</string>
+    <string name="scan_connecting">Connecting to device…</string>
+
+    <string name="data_battery_value">%1$sv</string>
+    <string name="data_storage_left_value">%1$s KB</string>
+    <string name="data_storage_max_value">%1$s KB</string>
+
+    <string name="confirm_device_selection_body">Are you sure you wish to connect to the following device: %1$s?</string>
+    <string name="confirm_device_selection_title">Connect to Device</string>
+    <string name="device_delete_warning">Selecting this button can permanently delete stored data on the FeatherLogger and is <font fgcolor="#ffff3000"><b>irreversible</b></font>.</string>
+</resources>
+

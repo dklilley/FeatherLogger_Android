@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="org.lilleypad.featherloggerapp.ConnectedDeviceActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="&lt;Device Name>"
+        android:id="@+id/deviceNameTextView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:textSize="25dp" />
+
+    <Space
+        android:layout_width="20px"
+        android:layout_height="20dp"
+        android:layout_below="@+id/deviceNameTextView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/space" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Device Data"
+        android:id="@+id/deviceDataTextView"
+        android:layout_below="@+id/space"
+        android:layout_alignParentStart="true"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Started Logging:"
+        android:id="@+id/startedLoggingTextView"
+        android:layout_below="@+id/deviceDataTextView"
+        android:layout_alignParentStart="true"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Battery Voltage:"
+        android:id="@+id/batteryVoltageTextView"
+        android:layout_below="@+id/startedLoggingValTextView"
+        android:layout_alignParentStart="true"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Maximum Storage:"
+        android:id="@+id/maximumStorageTextView"
+        android:layout_below="@+id/batteryVoltageValTextView"
+        android:layout_alignParentStart="true"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Storage Remaining:"
+        android:id="@+id/storageRemainingTextView"
+        android:layout_below="@+id/maximumStorageValTextView"
+        android:layout_alignParentStart="true"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="&lt;Started Logging Value>"
+        android:id="@+id/startedLoggingValTextView"
+        android:layout_below="@+id/startedLoggingTextView"
+        android:layout_toEndOf="@+id/space2" />
+
+    <Space
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/startedLoggingTextView"
+        android:layout_alignParentStart="true"
+        android:id="@+id/space2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="&lt;Battery Voltage Value>"
+        android:id="@+id/batteryVoltageValTextView"
+        android:layout_alignTop="@+id/space3"
+        android:layout_alignStart="@+id/startedLoggingValTextView" />
+
+    <Space
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:id="@+id/space3"
+        android:layout_below="@+id/batteryVoltageTextView"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="&lt;Max Storage Value>"
+        android:id="@+id/maximumStorageValTextView"
+        android:layout_below="@+id/maximumStorageTextView"
+        android:layout_alignStart="@+id/batteryVoltageValTextView" />
+
+    <Space
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:id="@+id/space4"
+        android:layout_alignTop="@+id/maximumStorageValTextView"
+        android:layout_alignParentStart="true" />
+
+    <Space
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:id="@+id/space5"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/storageRemainingTextView"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="&lt;Storage Remaining Value>"
+        android:id="@+id/storageRemainingValTextView"
+        android:layout_alignTop="@+id/space5"
+        android:layout_alignStart="@+id/maximumStorageValTextView" />
+
+    <Space
+        android:layout_width="20px"
+        android:layout_height="20dp"
+        android:id="@+id/space6"
+        android:layout_below="@+id/storageRemainingValTextView"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/space" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Download Stored Data"
+        android:id="@+id/downloadDataButton"
+        android:layout_below="@+id/space6"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="onClickDownload" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete Data"
+        android:id="@+id/deleteDataButton"
+        android:layout_below="@+id/space7"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/space7"
+        android:onClick="onClickDelete" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/device_delete_warning"
+        android:id="@+id/deleteWarningTextView"
+        android:layout_below="@+id/deleteDataButton"
+        android:layout_alignParentStart="true" />
+
+    <Space
+        android:layout_width="20px"
+        android:layout_height="20dp"
+        android:id="@+id/space7"
+        android:layout_below="@+id/downloadDataButton"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>
